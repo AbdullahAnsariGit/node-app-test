@@ -1,7 +1,7 @@
 import express from "express";
 const app = express();
 
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
     res.send("I am a hello world server");
@@ -13,5 +13,5 @@ app.get("/about", (req, res) => {
     res.send("some information about me");
 })
 app.listen(port, () => {
-    console.log(`server is running on port ${port}`);
+    console.log(`server is running on port ${PORT}`);
 });
