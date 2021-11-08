@@ -1,4 +1,5 @@
 import express from "express";
+import { start } from "repl";
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -12,6 +13,6 @@ app.get("/profile", (req, res) => {
 app.get("/about", (req, res) => {
     res.send("some information about me");
 })
-app.listen(Port, () => {
+app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
 });
